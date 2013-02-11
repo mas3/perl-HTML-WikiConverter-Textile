@@ -1,0 +1,44 @@
+HTML::WikiConverter::Textile
+
+HTML::WikiConverter::Textile adds the Textile dialect to
+HTML::WikiConverter allowing the conversion of HTML to Textile
+markup.
+
+SYNOPSIS
+
+Converting HTML to wiki markup is easy:
+
+  use HTML::WikiConverter;
+  my $wc = new HTML::WikiConverter(dialect => 'Textile');
+  print $wc->html2wiki($html);
+
+Or from the command line:
+
+  % html2wiki --dialect Textile input.html > output.wiki
+
+INSTALLATION
+
+To install this module, run the following commands:
+
+	perl Makefile.PL
+	make
+	make test
+	make install
+
+DOCUMENTATION
+
+After installing, you can find documentation for this module with the
+perldoc command.
+
+    perldoc HTML::WikiConverter::Textile
+
+LICENSE AND COPYRIGHT
+
+Copyright (C) 2011 MASUDA Takashi
+
+This program is free software; you can redistribute it and/or modify it
+under the terms of either: the GNU General Public License as published
+by the Free Software Foundation; or the Artistic License.
+
+See http://dev.perl.org/licenses/ for more information.
+
